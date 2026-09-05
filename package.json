@@ -1,0 +1,29 @@
+{
+  "name": "fitzy-code-chat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RAG chat over all fitzyracing1 GitHub repositories",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "ingest": "tsx scripts/ingest.ts",
+    "ingest:dry": "tsx scripts/ingest.ts --dry-run",
+    "ingest:list": "tsx scripts/ingest.ts --list"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "next": "^15.1.0",
+    "openai": "^4.77.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
